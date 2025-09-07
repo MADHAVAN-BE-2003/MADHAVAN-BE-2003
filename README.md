@@ -1,5 +1,10 @@
-# 💫 About Me:
-I'm currently studying in Theni Kammavar Sangam College of Technology and NxtWave.<br>I'm currently learning Python and Frontend.<br>I'm familiar with Flutter Framework.
+<h1 align="center">💡 Hey there, I'm Madhavan — Turning Ideas into Scalable Solutions</h1>
+
+🎓 Graduated B.E. Electronics and Communication (2025) from Theni Kammavar Sangam College of Technology.<br>
+💻 Software Engineer at Centre for Management Technology Pte. Ltd.<br>
+🚀 Passionate about Full-Stack Development, Flutter, Blockchain, and AI.<br>
+🌱 Currently expanding expertise in Python, Frontend Development, and Cloud Platforms.<br>
+📱 Experienced in building scalable web and mobile applications, with hands-on projects in AI, Blockchain, and Hackathons.<br>
 
 
 ## 🌐 Socials:
