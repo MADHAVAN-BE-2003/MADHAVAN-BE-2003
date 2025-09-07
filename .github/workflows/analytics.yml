@@ -1,0 +1,17 @@
+name: Track Profile View
+
+on:
+  workflow_dispatch:
+  push:
+  schedule:
+    - cron: '0 */6 * * *' # every 6 hours
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send pageview to Google Analytics
+        run: |
+          curl -X POST https://www.google-analytics.com/mp/collect?measurement_id=${{ secrets.GA_TRACKING_ID }}&api_secret=${{ secrets.GA_API_SECRET }} \
+          -d "client_id=$(uuidgen)" \
+          -d "events=[{name:'profile_view',params:{page_location:'https://github.com/MADHAVAN-BE-2003'}}]"
