@@ -14,4 +14,17 @@ jobs:
         run: |
           curl -X POST "https://www.google-analytics.com/mp/collect?measurement_id=${{ secrets.GA_TRACKING_ID }}&api_secret=${{ secrets.GA_API_SECRET }}" \
             -H "Content-Type: application/json" \
-            -d "{\"client_id\":\"$(uuidgen)\",\"events\":[{\"name\":\"profile_view\",\"params\":{\"page_location\":\"https://github.com/MADHAVAN-BE-2003\"}}]}"
+            -d "{
+              \"client_id\": \"$(uuidgen)\",
+              \"events\": [{
+                \"name\": \"profile_view\",
+                \"params\": {
+                  \"page_location\": \"https://github.com/MADHAVAN-BE-2003\",
+                  \"page_title\": \"GitHub Profile\",
+                  \"engagement_time_msec\": 100,
+                  \"source\": \"github_action\",
+                  \"platform\": \"GitHub Runner\",
+                  \"language\": \"en\"
+                }
+              }]
+            }"
